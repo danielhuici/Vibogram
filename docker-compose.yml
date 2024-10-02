@@ -1,8 +1,8 @@
 services:
   vigrambot:
     build: .
-    image: vigrambot
-    container_name: Vigrambot
+    image: vibogram
+    container_name: Vibogram
     environment:
       - DB_HOST=$DB_HOST
       - DB_PORT=$DB_PORT
@@ -16,4 +16,4 @@ services:
       - TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
       - TELEGRAM_CHANNEL_ID=$TELEGRAM_CHANNEL_ID
     volumes:
-      - /data/vigrambot:/data/vigrambot
+      - /data/vibogram:/data/vibogram
