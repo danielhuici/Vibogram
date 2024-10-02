@@ -22,7 +22,7 @@ Vibogram is a Telegram bot that automatically posts videos to a Telegram channel
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/videobot.git
+git clone https://github.com/danielhuici/videobot.git
 cd videobot
 ```
 
