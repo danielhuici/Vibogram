@@ -1,0 +1,21 @@
+services:
+  vigrambot:
+    build: .
+    image: vigrambot
+    container_name: Vigrambot
+    env_file: 
+      - .env
+    environment:
+      - DB_HOST=$DB_HOST
+      - DB_PORT=$DB_PORT
+      - DB_USER=$DB_USER
+      - DB_NAME=$DB_NAME
+      - PGPASSWORD=$PGPASSWORD
+      - GDRIVE_CLIENT_SECRET_PATH=$GDRIVE_CLIENT_SECRET_PATH
+      - GDRIVE_CREDENTIALS_PATH=$GDRIVE_CREDENTIALS_PATH
+      - GDRIVE_VIDEOS_PATH=$GDRIVE_VIDEOS_PATH
+      - GDRIVE_DB_BACKUPS_PATH=$GDRIVE_DB_BACKUPS_PATH
+      - TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
+      - TELEGRAM_CHANNEL_ID=$TELEGRAM_CHANNEL_ID
+    volumes:
+      - /data/vigrambot:/data/vigrambot
