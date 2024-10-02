@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 from dotenv import load_dotenv
 import schedule
 import time

@@ -3,8 +3,6 @@ services:
     build: .
     image: vigrambot
     container_name: Vigrambot
-    env_file: 
-      - .env
     environment:
       - DB_HOST=$DB_HOST
       - DB_PORT=$DB_PORT

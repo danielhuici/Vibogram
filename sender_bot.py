@@ -1,4 +1,3 @@
-import os
 from managers.db_manager import DBManager
 from managers.google_drive_manager import GoogleDriveManager
 from managers.telegram_manager import TelegramManager
@@ -6,6 +5,7 @@ from datetime import datetime
 import logging
 import random
 import asyncio
+import os
 
 class SenderBot():
     def __init__(self):
