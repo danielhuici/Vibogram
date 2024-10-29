@@ -70,9 +70,3 @@ Contributions are welcome! If you would like to contribute, please fork the repo
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For inquiries or support, please contact:
-- Your Name: danielhuici@hotmail.com
-- GitHub: [danielhuici](https://github.com/danielhuici)
