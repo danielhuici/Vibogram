@@ -1,7 +1,9 @@
+from common.utils import configure_logger
 from managers.db_manager import DBManager
 from managers.google_drive_manager import GoogleDriveManager
 from managers.telegram_manager import TelegramManager
 from datetime import datetime
+from dotenv import load_dotenv
 import logging
 import random
 import asyncio
@@ -9,6 +11,8 @@ import os
 
 class SenderBot():
     def __init__(self):
+        load_dotenv()
+        configure_logger()
         self.db_manager = DBManager()
         self.gdrive_manager = GoogleDriveManager()
         self.telegram_manager = TelegramManager()
