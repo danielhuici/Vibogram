@@ -12,7 +12,7 @@ class TelegramManager:
     async def post_video(self, video_path):
         try:
             with open(video_path, 'rb') as video_file:
-                await self.bot.send_video(chat_id=self.channel_id, video=video_file)
+                await self.bot.send_video(chat_id=self.channel_id, video=video_file, caption="\U0001F525 ¡Reacciona! \U0001F4E2 ¡Comparte!")
                 return True
 
         except TelegramError as e:
